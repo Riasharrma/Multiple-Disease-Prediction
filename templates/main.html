@@ -37,7 +37,7 @@ footer{
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color: black !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color: black !important;">
         <a href="{{ url_for('home') }}"><h3><B>MULTI DISEASE PREDICTOR</B></h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
@@ -49,27 +49,45 @@ footer{
              </li>
              <li class="nav-item active">
                <a class="nav-link" href="{{ url_for('diabetesPage') }}">Diabetes</a>
-      
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="{{ url_for('cancerPage') }}">Breast Cancer</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('heartPage') }}">Heart</a>
+             </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('kidneyPage') }}">Kidney</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('liverPage') }}">Liver</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('malariaPage') }}">Malaria</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('pneumoniaPage') }}">Pneumonia</a>
+              </li>
            </ul>
          </div>
        </nav>
-	<br>
+  <br>
 <br>
 <br>
 <br>
 <main>
-	<div class="container-fluid" style="margin-bottom: 20px;">
-	{% block content %}
+  <div class="container-fluid" style="margin-bottom: 20px;">
+  {% block content %}
 
-	{% endblock %}
+  {% endblock %}
     </div>
   </main>
   <footer>
     <center>
       <ul style="list-style-type:none;">
       &nbsp;
-      <li style="display: inline;"><a style="color: white;" target="blank"><span class="fa fa-web">  </span></a></li>
-      <li><p style="color: white;">Made By <span style="color: red;">&hearts;</span> Ria sharma ,Ayam Bhardwaj ,Meenakshi Thakur </p></li>
+      <li style="display: inline;"><a href="https://projectworlds.in" style="color: white;" target="blank"><span class="fa fa-web">  Projectworlds</span></a></li>
+      <li><p style="color: white;">Made with <span style="color: red;">&hearts;</span> by Projectworlds </p></li>
     </ul>
   </center>
   </footer>
